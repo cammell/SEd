@@ -4,10 +4,24 @@
 @import "modules/hello.scss";
 
 body {
-  background: $wtf;
+  background: #E4E3E0;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.editor {
+  height: 60%;
+  width: 80%;
+  resize: none;
+  border-radius: 3px;
+  
 }
