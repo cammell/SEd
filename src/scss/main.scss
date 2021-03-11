@@ -12,25 +12,52 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  height: 100%;
-  width: 100%;
+.button {
   display: flex;
-  number: 1;
+  justify-content: right;
+}
+.container {
+  height: 70vh;
+  width:  80vw;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.editor {
-  flex: 2;
+.container_name {
+  display: flex;
+  justify-content: left;
+  width: 80%;
+  maring-left: 15px;
+  color: #333333;
+  font-size: large;
+  font-weight: 500;
+}
+.container_input {
+  
   height: 60%;
   width: 80%;
+  margin-bottom: 20px;
+
+}
+
+.editor {
+  
+  height: 100%;
+  width: 100%;
   resize: none;
   border-radius: 10px;
   border-style: solid;
   border-width: 3px;
   border-color: #2D6AC5;
+  font-size: large;
+  ;
 }
 
-.name {
-  flex: 1;
+.editor:focus {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #5b2dc5;
+  outline: none;
 }
