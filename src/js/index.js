@@ -6,4 +6,16 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-console.log('HELLO 🚀')
+const text=document.querySelector(".editor");
+const load=document.querySelector(".load");
+const save=document.querySelector(".save");
+
+
+load.addEventListener('click', event => {
+    if(!localStorage.getItem('text')) {
+        
+    }
+})
+console.log(text);
+console.log(load);
+console.log(save);
