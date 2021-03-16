@@ -13,8 +13,12 @@ const save=document.querySelector(".save");
 
 load.addEventListener('click', event => {
     if(!localStorage.getItem('text')) {
-        
+        text.value = localStorage.getItem('text');
     }
+})
+
+save.addEventListener('click', event => {
+    localStorage.setItem('text',text.value);
 })
 console.log(text);
 console.log(load);
