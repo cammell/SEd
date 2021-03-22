@@ -6,10 +6,10 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-const text=document.querySelector(".editor");
-const load=document.querySelector(".load");
-const save=document.querySelector(".save");
-const info=document.querySelector(".info");
+const text=document.querySelector(".container__input-editor");
+const load=document.querySelector(".container__button-load");
+const save=document.querySelector(".container__button-save");
+const info=document.querySelector(".container__info");
 
 function message(text) {
     console.log('function message was called, text value is: ' + text)

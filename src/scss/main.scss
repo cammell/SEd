@@ -11,8 +11,15 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+.container__buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end; 
 
-.button {
+}
+
+.container__button {
   
   margin: 0 15px;
   border-radius: 10px;
@@ -21,9 +28,11 @@ body {
   border-color: #2D6AC5;
 }
 
-.button:hover {
+.container__button:hover {
   border-color: #5b2dc5;
 }
+
+
 .container {
   height: 70vh;
   width:  70vw;
@@ -33,14 +42,8 @@ body {
   justify-content: center;
 }
 
-.container_buttons {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: flex-end; 
 
-}
-.container_name {
+.container__name {
   display: flex;
   justify-content: left;
   width: 100%;
@@ -49,42 +52,34 @@ body {
   font-size: large;
   font-weight: 500;
 }
-.container_input {
+.container__input {
   
   height: 60%;
   width: 100%;
   margin-bottom: 20px;
-
-}
-
-.editor {
-  
-  height: 100%;
-  width: 100%;
-  resize: none;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #2D6AC5;
-  font-size: large;
-  ;
-}
-
-.editor:focus {
   border-radius: 10px;
   border-style: solid;
   border-width: 3px;
   border-color: #5b2dc5;
   outline: none;
+  resize: none;
+
 }
 
-.container_info {
+
+
+.container__input-editor:focus {
+
+}
+
+.container__info {
   display: flex;
   align-items: flex-start;
   width: 100%;
+  color: #000000;
 }
 
 .info {
-  color: #000000;
+
 
 }

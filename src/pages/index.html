@@ -22,28 +22,28 @@
   </head>
   <body>
     <div class="container">
-      <div class="container_name">
-        <p class="name">Yet another text editor</p>
-      </div>
-      <div class="container_input">
+      
+        <p class="containter__name">Yet another text editor</p>
+      
+      
         <textarea
           
           type="text"
           id="editor"
-          class="editor"
+          class="container__input"
           name="editor"
           placeholder=""
           autofocus="true"
           autocomplete="off"
         ></textarea>
+      
+      <div class="container__buttons">
+        <button class="container__button container__button-load" type="button">LOAD</button>
+        <button class="container__button containter__button-save" type="button">SAVE</button>
       </div>
-      <div class="container_buttons">
-        <button class="button load" type="button">LOAD</button>
-        <button class="button save" type="button">SAVE</button>
-      </div>
-      <div class="container_info">
-        <p class="info">Show the line</p>
-      </div>
+      
+        <p class="container__info">Show the line</p>
+      
     </div>
   </body>
 </html>
