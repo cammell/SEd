@@ -6,7 +6,7 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-const text=document.querySelector(".container__input-editor");
+const text=document.querySelector(".container__input");
 const load=document.querySelector(".container__button-load");
 const save=document.querySelector(".container__button-save");
 const info=document.querySelector(".container__info");
