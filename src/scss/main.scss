@@ -1,87 +1,81 @@
 @import "~normalize.css";
 
-@import "_variables";
-@import "modules/hello.scss";
+// @import "_variables";
+// @import "modules/hello.scss";
 
 body {
-  background: #E4E3E0;
+  background: #e4e3e0;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
-.container__button {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: flex-end; 
-
-}
-
-.container__button-load {
-  
-  margin: 0 15px;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #2D6AC5;
-}
-.container__button-save {
-  
-  margin: 0 15px;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #2D6AC5;
-}
-
-.container__button-load.container__button-save:hover {
-  border-color: #5b2dc5;
-}
-
 
 .container {
   height: 70vh;
-  width:  70vw;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  &__button {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    &-load {
+      margin: 0 15px;
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #2d6ac5;
+      &:hover {
+        border-color: #5b2dc5;
+      }
+    }
+    &-save {
+      margin: 0 15px;
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #2d6ac5;
+      &:hover {
+        border-color: #5b2dc5;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    color: #000000;
+  }
+  &__input {
+    height: 60%;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #5b2dc5;
+    outline: none;
+    resize: none;
+  }
+  &__name {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    
+    color: #333333;
+    font-size:28px;  
+    font-weight: 500;
+  }
 }
 
 
-.container__name {
-  display: flex;
-  justify-content: left;
-  width: 100%;
-  margin-left: 15px;
-  color: #333333;
-  font-size: large;
-  font-weight: 500;
-}
-.container__input {
-  
-  height: 60%;
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #5b2dc5;
-  outline: none;
-  resize: none;
-
-}
 
 
 
 
-
-.container__info {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  color: #000000;
-}
 
