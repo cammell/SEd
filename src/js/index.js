@@ -14,7 +14,10 @@ const info=document.querySelector(".container__info");
 function message(text) {
     console.log('function message was called, text value is: ' + text)
     info.innerText=text;
+    info.classList.add("animation");
 }
+
+
 
 load.addEventListener('click', event => {
     
