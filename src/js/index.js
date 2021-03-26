@@ -14,7 +14,13 @@ const info=document.querySelector(".container__info");
 function message(text) {
     console.log('function message was called, text value is: ' + text)
     info.innerText=text;
-    info.classList.add("animation");
+    info.classList.add("animationIn");
+    window.setTimeout(animationOUT => {
+        console.log('test Timeout function');
+        info.classList.remove("animationIn");
+        info.classList.add("animationOut");
+    }, 2000);
+    
 }
 
 

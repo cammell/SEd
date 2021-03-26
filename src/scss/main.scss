@@ -3,11 +3,16 @@
 // @import "_variables";
 // @import "modules/hello.scss";
 
-.animation {
+.animationIn {
 animation-name: fadeIn; 
 animation-duration: 500ms;
 animation-iteration-count: 1;
 }
+.animationOut {
+  animation-name: fadeOut; 
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  }
 @keyframes fadeIn {
   from {
     opacity: 0;
