@@ -14,14 +14,18 @@ const info=document.querySelector(".container__info");
 function message(text) {
     console.log('function message was called, text value is: ' + text)
     info.innerText=text;
-    info.classList.add("animationIn");
-    window.setTimeout(animationOUT => {
+    info.classList.add("animation");
+    window.setTimeout(animation => {
         console.log('test Timeout function');
-        info.classList.remove("animationIn");
-        info.classList.add("animationOut");
-    }, 2000);
-    
+        info.innerText="";
+        // info.classList.remove("animation");
+        
+        }, 3000);
 }
+    
+
+    
+
 
 
 
@@ -40,5 +44,3 @@ save.addEventListener('click', event => {
     localStorage.setItem('text',text.value);
     message("Text have been saved in local storage");
 })
-
-
