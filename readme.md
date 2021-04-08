@@ -1,4 +1,4 @@
-![cover](/home/cammell/dev/SEd/src/assets/img/textEditGfx.png)
+![cover](./src/assets/img/textEditGfx.png)
 
 # Yet Another Text Editor 
 
