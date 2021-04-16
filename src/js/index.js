@@ -6,9 +6,9 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-const text=document.querySelector(".container__input");
-const load=document.querySelector(".container__button-load");
-const save=document.querySelector(".container__button-save");
+const text=document.querySelector(".form__input");
+const load=document.querySelector(".form__button-load");
+const save=document.querySelector(".form__button-save");
 const info=document.querySelector(".container__info");
 
 function message(text) {
@@ -16,9 +16,9 @@ function message(text) {
     info.innerText=text;
     info.classList.add("animation");
     window.setTimeout(animation => {
-        console.log('test Timeout function');
+        
         info.innerText="";
-        // info.classList.remove("animation");
+        info.classList.remove("animation");
         
         }, 3000);
 }
