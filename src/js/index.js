@@ -44,3 +44,16 @@ save.addEventListener('click', event => {
     localStorage.setItem('text',text.value);
     message("Text have been saved in local storage");
 })
+
+
+window.addEventListener('load', event => {
+    
+    if(localStorage.getItem('text')!=null) {
+        
+        
+        message("There is a text saved, you can load it");
+        
+    } else {
+        message("Local file is empty, there is no previous save");
+    }
+})
